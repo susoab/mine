@@ -11,7 +11,7 @@ $(window).load(function () {
     //  isotope
     var $container = $('.portfolio_container');
     $container.isotope({
-        filter: '*',
+        filter: '*', //master key? 
     });
 
     $('.portfolio_filter a').click(function () {
@@ -26,10 +26,9 @@ $(window).load(function () {
                 animationEngine: "jquery"
             }
         });
-        return false;
     });
 
-    // back to top
+    // back to top, when is it timing
     var offset = 300,
         offset_opacity = 1200,
         scroll_top_duration = 700,
